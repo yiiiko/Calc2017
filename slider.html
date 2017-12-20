@@ -3,13 +3,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>slider.py example</title>
+        <title>Derivative</title>
 
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.css" type="text/css" />
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.7.min.css" type="text/css" />
+<center>
+<h3 class ="sansserif"><a>Cauchy's Definition of the Derivative</a></h3>
+<p><img src="cauchysdef.png" style="width:30%;height:30%;margin-bottom:50px;"></p>
+</center>
 <p class = "sansserif"><a>The derivative of a function of a single variable at a chosen input value, when it exists, is the slope of the tangent line to the graph of the function at that point. The tangent line is the best linear approximation of the function near that input value. For this reason, the derivative is often described as the "instantaneous rate of change", the ratio of the instantaneous change in the dependent variable to that of the independent variable.</a></p>
-<p><img src="cauchysdef.png" style="width:50%;height:50%;margin-bottom:50px;">
-<p><img src="Tangent_animation.gif" style="width:50%;height:50%;margin-bottom:50px;">
+
+<center><p><img src="Tangent_animation.gif" style="width:40%;height:40%;margin-bottom:50px;"></p></center>
 <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.js"></script>
 <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.7.min.js"></script>
 <script type="text/javascript">
@@ -24,11 +28,27 @@
             width: 90%;
             height: 100%;
             margin: auto;
+            margin-bottom: 250px;
+          }
+          p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+            /* margin-top: 250px; */
+            margin-bottom: 250px;
+            margin-right: 250px;
+            margin-left: 250px;
+            margin-bottom: 250px;
+            letter-spacing: 1px;
+          }
+          h3.sansserif{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            color:gray;
           }
         </style>
     </head>
     <body>
-
+<center>
         <div class="bk-root">
             <div class="bk-plotdiv" id="261bafbe-bf4d-4429-8a4d-068c6ec1d885"></div>
         </div>
@@ -48,5 +68,7 @@
         })();
 
         </script>
+      </center>
     </body>
+
 </html>

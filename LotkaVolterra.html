@@ -1,14 +1,17 @@
 
 <!DOCTYPE html>
-<center>
+
 <html lang="en">
 
     <head>
         <meta charset="utf-8">
 
         <title>Lotka Volterra</title>
-
+<center><h3 class ="sansserif"><a>Lotka Volterra Predator Prey Model</a></h3></center>
+<p class = "sansserif"><a>The Lotka–Volterra equations, also known as the predator–prey equations, are a pair of first-order, nonlinear, differential equations frequently used to describe the dynamics of biological systems in which two species interact, one as a predator and the other as prey. The populations change through time according to the pair of equations for fox and rabbits:</a></p>
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.css" type="text/css" />
+<center>
+<p><img src="rabbits_and_foxes_0.png" style="width:12%;height:12%;margin-bottom:50px;">
 <p><img src="rabbits_and_foxes_1.png" style="width:50%;height:50%;margin-bottom:50px;">
 <p><img src="rabbits_and_foxes_2.png" style="width:50%;height:50%;margin-bottom:50px;">
   <script src="https://unpkg.com/jupyter-js-widgets@~2.1.4/dist/embed.js"></script>
@@ -29,6 +32,25 @@
             height: 100%;
             margin: auto;
             margin-top: 250px;
+          }
+          p{
+            margin-top: 150px;
+            margin-bottom: 250px;
+          }
+          p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+            /* margin-top: 250px; */
+
+            margin-right: 350px;
+            margin-left: 350px;
+            margin-bottom: 150px;
+            letter-spacing: 1px;
+          }
+          h3.sansserif{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 150px;
+            margin-bottom: 100px;
+            color:gray;
           }
         </style>
     </head>

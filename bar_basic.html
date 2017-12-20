@@ -3,14 +3,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Bokeh Plot</title>
+        <title>Integral</title>
 
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.css" type="text/css" />
+<center><h3 class ="sansserif"><a>Riemann Integral as Area</a></h3></center>
 <p class = "sansserif"><a>The sum is calculated by dividing the region up into shapes (rectangles, trapezoids, parabolas, or cubics) that together form a region that is similar to the region being measured, then calculating the area for each of these shapes, and finally adding all of these small areas together. This approach can be used to find a numerical approximation for a definite integral even if the fundamental theorem of calculus does not make it easy to find a closed-form solution. Because the region filled by the small shapes is usually not exactly the same shape as the region being measured, the Riemann sum will differ from the area being measured. This error can be reduced by dividing up the region more finely, using smaller and smaller shapes. As the shapes get smaller and smaller, the sum approaches the Riemann integral.</a></p>
+<p class = "sansserif"><a>The following example evaluate the area of the graph, using retangles to find left riemann sum and right riemann sum:</a></p>
 <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.7.min.js"></script>
 <script type="text/javascript">
     Bokeh.set_log_level("info");
 </script>
+
         <style>
           html {
             width: 100%;
@@ -21,8 +24,26 @@
             height: 100%;
             margin: auto;
           }
+
+          p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0px;
+            margin-right: 350px;
+            margin-left: 350px;
+            margin-bottom: 130px;
+            letter-spacing: 1px;
+          }
+
+          h3.sansserif{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 300px;
+            margin-bottom: 250px;
+            color:gray;
+          }
         </style>
     </head>
+
+    <center>
     <body>
 
         <div class="bk-root">
@@ -44,5 +65,6 @@
         })();
 
         </script>
+      </center>
     </body>
 </html>
